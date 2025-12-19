@@ -65,7 +65,6 @@ const App = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">HK</span>
-            <span className="text-slate-500">.</span>
           </motion.div>
 
           {/* Desktop Menu */}
@@ -140,12 +139,14 @@ const App = () => {
             variants={staggerContainer}
             className="space-y-8 z-10"
           >
+            
+
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium hover:bg-cyan-500/20 transition-colors cursor-default backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              MBA Candidate @ IIM Lucknow
+              MBA @ IIM Lucknow | B.Tech(CSE) @ NIT Andhra Pradesh
             </motion.div>
             
             <motion.h1 variants={fadeInUp} className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
@@ -154,7 +155,11 @@ const App = () => {
                 Meets Innovation
               </span>
             </motion.h1>
-            
+            <motion.div variants={fadeInUp} className="space-y-2">
+                <h2 className="text-xl md:text-2xl text-slate-300 font-light">
+                    Hello, I'm <span className="font-semibold text-white">Hrishikesh Kumar</span>!
+                </h2>
+            </motion.div>
             <motion.p variants={fadeInUp} className="text-xl text-slate-400 max-w-lg leading-relaxed border-l-2 border-slate-800 pl-6">
               Bridging the gap between <b>$1M engineering efficiencies</b> and strategic business outcomes. Ex-Senior Engineer @ Carrier (ELP).
             </motion.p>
@@ -226,7 +231,7 @@ const App = () => {
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500 flex flex-col items-center gap-2 cursor-pointer hover:text-cyan-400 transition-colors"
+          className="absolute bottom-10 -translate-x-1/2 text-slate-500 flex flex-col items-center gap-2 cursor-pointer hover:text-cyan-400 transition-colors"
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >
           <span className="text-xs uppercase tracking-widest opacity-50">Scroll</span>

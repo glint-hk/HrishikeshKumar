@@ -432,7 +432,7 @@ const App = () => {
           <div className="flex gap-6 mb-12">
             <SocialLink href="https://www.linkedin.com/in/glint-hk/" icon={<Linkedin size={20} />} label="LinkedIn" />
             <SocialLink href="mailto:hrishikeshkumar16@gmail.com" icon={<Mail size={20} />} label="Email" />
-            <SocialLink href="https://github.com/AlphaHKumar" icon={<Github size={20} />} label="Github" />
+            <SocialLink href="https://github.com/glint-hk" icon={<Github size={20} />} label="Github" />
           </div>
           
           <p className="text-slate-600 text-sm">
